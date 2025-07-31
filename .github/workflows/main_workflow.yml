@@ -1,0 +1,13 @@
+name: main_workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "test"
